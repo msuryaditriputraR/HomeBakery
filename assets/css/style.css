@@ -1,1 +1,6 @@
 @import "var.css";
+@import "font.css";
+
+body {
+    font-family: Futura-Heavy;
+}
