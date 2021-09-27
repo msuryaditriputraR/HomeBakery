@@ -1,6 +1,74 @@
 @import "var.css";
 @import "font.css";
 
-body {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.flex-space-beetween {
+    justify-content: space-between;
+}
+
+/* Header */
+header {
+    padding: 20px 0;
+}
+
+.logo {
     font-family: Futura-Heavy;
+    font-size: 1rem;
+    color: #F54748;
+}
+
+nav {
+    flex-basis: 70%;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav a {
+    font-size: .93rem;
+    color: rgba(245, 71, 72, 37%);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+nav a i {
+    margin-left: 5px;
+    margin-top: 2px;
+    font-size: .8rem;
+}
+
+nav a.active,
+nav a:hover {
+    color: #F9473B;
+    font-weight: 700;
+}
+
+
+
+.btn-login {
+    padding: 8px 30px;
+    border-radius: 32px;
+    background: rgb(243, 37, 39);
+    background: linear-gradient(310deg, rgba(243, 37, 39, 1) 0%, rgba(245, 71, 72, 1) 35%, rgba(247, 110, 111, 1) 100%);
+    color: white;
+    font-size: 1rem;
+    /* box-shadow: 0px 10px 30px 0px rgba(247, 96, 97, 20%); */
+}
+
+.btn-login:hover {
+    color: white;
+    box-shadow: 0px 8px 15px 0px rgba(247, 96, 97, 30%);
 }
