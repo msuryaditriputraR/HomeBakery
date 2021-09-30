@@ -27,6 +27,31 @@
     background: linear-gradient(310deg, rgba(243, 37, 39, 1) 0%, rgba(245, 71, 72, 1) 35%, rgba(247, 110, 111, 1) 100%);
 }
 
+.highlight {
+    font-family: 'Courgette', cursive;
+    color: #F54748;
+    font-weight: 500;
+}
+
+.btn-arrow {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: .9rem;
+    color: white;
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+}
+
+.btn-left {
+    margin-right: 7.5px;
+}
+
+.btn-right {
+    margin-left: 7.5px;
+}
+
 /* Header */
 header {
     padding: 20px 0;
@@ -113,23 +138,20 @@ nav a:hover {
     margin: 20px 0;
 }
 
-.main-content .title {
+.title {
     font-family: 'Merriweather', serif;
     font-weight: bold;
     font-size: 48px;
     color: inherit;
 }
 
-.main-content .highlight {
+#home .highlight {
     display: block;
-    font-family: 'Courgette', cursive;
-    color: #F54748;
-    font-weight: 500;
     position: relative;
     padding-bottom: 10px;
 }
 
-.main-content .highlight .border-bottom {
+#home .highlight .border-bottom {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -154,21 +176,20 @@ nav a:hover {
 .bottom-content .btn-order {
     padding: 8px 20px;
     border-radius: 32px;
-
     color: white;
     font-size: 1rem;
     font-weight: bold;
     text-decoration: none;
 }
 
-.bottom-content .btn-red:hover {
+.bottom-content .btn-red:hover,
+.btn-arrow:hover {
     color: white;
     box-shadow: 0px 8px 15px 0px rgba(247, 96, 97, 30%);
 }
 
 .bottom-content .btn-play {
     margin-left: 15px;
-
     border-radius: 50%;
     width: 35px;
     height: 35px;
@@ -218,9 +239,10 @@ nav a:hover {
 
 #ingredients .text {
     margin: 0;
-    padding: 100px 130px 100px 0;
+    padding: 100px 80px 100px 0;
 }
 
+#best-seller .top-content p,
 #ingredients .top-content p {
     color: #F54748;
     font-family: 'Poppins', sans-serif;
@@ -235,8 +257,7 @@ nav a:hover {
 
 }
 
-#ingredients .main-content .highlight {
-    display: inline-block;
+#ingredients .highlight {
     text-transform: capitalize;
 }
 
@@ -247,13 +268,90 @@ nav a:hover {
     margin-bottom: 35px;
 }
 
+.btn-order-now,
 .btn-read-more {
     padding: 8px 20px;
     border-radius: 32px;
-    background: rgb(243, 37, 39);
-    background: linear-gradient(310deg, rgba(243, 37, 39, 1) 0%, rgba(245, 71, 72, 1) 35%, rgba(247, 110, 111, 1) 100%);
     color: white;
     font-size: 1rem;
     font-weight: bold;
     text-decoration: none;
+}
+
+/* Section Best Seller */
+#best-seller {
+    padding: 15px 0 50px;
+}
+
+#best-seller .container {
+    flex-direction: column;
+}
+
+#best-seller .top-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#best-seller .main-content {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0;
+}
+
+.circle {
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 50%;
+    padding: 20px;
+    border: 2px solid rgba(247, 110, 111, 0.1);
+    cursor: pointer;
+    /* box-shadow: inset 1px 1px rgba(247, 110, 111, 0.1); */
+}
+
+.circle:hover {
+    box-shadow: 0px 18px 30px rgba(252, 116, 112, 0.1);
+}
+
+.circle .image {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.circle .image img {
+    display: inline-block;
+    width: 45%;
+    height: max-content;
+}
+
+.circle .star {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.circle .price,
+.circle .name {
+    color: #F54748;
+    font-family: 'Merriweather', serif;
+
+}
+
+.circle .name {
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.circle .price {
+    margin-top: 5px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+#best-seller .bottom-content {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
 }
