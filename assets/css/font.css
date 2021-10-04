@@ -6,16 +6,6 @@
         url('../fonts/Futura Std Heavy.ttf') format('truetype');
 }
 
-/* Poppins */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-
-/* Merriweather */
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;800&display=swap');
-
-/* Courgette  */
-/* @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
- */
-
 @font-face {
     font-family: Courgette;
     src: url('../fonts/Courgette-Regular.ttf') format("truetype");

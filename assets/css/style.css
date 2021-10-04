@@ -150,7 +150,7 @@ nav a:hover {
     font-family: 'Merriweather', serif;
     font-weight: bold;
     font-size: 48px;
-    color: inherit;
+    color: #504343;
 }
 
 #home .highlight {
@@ -241,8 +241,8 @@ nav a:hover {
 }
 
 #ingredients .image img {
-    width: 550px;
-    height: 520px;
+    width: 750px;
+    height: 720px;
 }
 
 #ingredients .text {
@@ -250,6 +250,7 @@ nav a:hover {
     padding: 100px 80px 100px 0;
 }
 
+#testimonials .top-content p,
 #baker .top p,
 #best-seller .top-content p,
 #ingredients .top-content p {
@@ -262,8 +263,7 @@ nav a:hover {
 #ingredients .main-content .title {
     font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
-    margin: -15px 0 -5px;
-
+    margin: -20px 0 -5px;
 }
 
 #ingredients .highlight {
@@ -272,9 +272,10 @@ nav a:hover {
 
 #ingredients .main-content p {
     font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    font-size: 1.3rem;
+    font-weight: 400;
+    font-size: 1.2rem;
     margin-bottom: 35px;
+    line-height: 1.6;
 }
 
 .btn-order-now,
@@ -458,6 +459,128 @@ nav a:hover {
     height: 225px;
 }
 
+#testimonials {
+    padding: 25px 0 100px;
+}
+
+#testimonials .container {
+    flex-direction: column;
+}
+
+#testimonials .top-content {
+    text-align: center;
+}
+
+#testimonials .top-content .title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+
+}
+
+#testimonials .top-content p {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+#testimonials .main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 150px;
+}
+
+.testimonial {
+    flex-basis: 30%;
+    margin-right: 30px;
+}
+
+.testimonial:nth-child(2) {
+    margin-top: -65px;
+}
+
+.testimonial:nth-child(4) {
+    margin-left: 200px;
+    margin-top: -50px;
+}
+
+.testimonial:nth-child(5) {
+    margin-left: -100px;
+}
+
+
+.testimonial .card {
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 30px rgba(80, 67, 67, .13);
+    transition: all .3s;
+}
+
+
+.testimonial:hover .card {
+    background: rgb(243, 37, 39);
+    background: linear-gradient(310deg, rgba(243, 37, 39, 1) 0%, rgba(245, 71, 72, 1) 35%, rgba(247, 110, 111, 1) 100%);
+    box-shadow: none;
+}
+
+.testimonial:hover .card .title,
+.testimonial:hover .card .desc {
+    color: #fff;
+}
+
+.testimonial .card .title {
+    color: #F54748;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.testimonial .card .desc {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgba(80, 67, 67, .42);
+}
+
+
+.testimonial .people {
+    display: flex;
+    margin: 20px 0;
+}
+
+.testimonial .people .image {
+    margin: 0;
+    padding: 0;
+    flex-basis: 20%;
+    text-align: left;
+}
+
+.testimonial .people .image img {
+    width: 50px;
+    height: 50px;
+}
+
+.testimonial .people .text {
+    margin: 0;
+    text-align: left;
+}
+
+.testimonial .people .text .name {
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.testimonial .people .text .job {
+    color: rgba(51, 51, 51, .5);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0;
+}
+
 /* Service */
 #service {
     background: rgb(255, 207, 202);
@@ -486,7 +609,6 @@ nav a:hover {
     font-family: 'Poppins', sans-serif;
     font-size: 2rem;
     font-weight: 600;
-    color: #504343;
     margin-top: 30px;
     margin-bottom: 10px;
 }
