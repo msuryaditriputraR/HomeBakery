@@ -226,8 +226,84 @@ nav a:hover {
 }
 
 .image img {
-    width: 400px;
-    height: 550px;
+    width: 460px;
+    height: 650px;
+}
+
+#home .image {
+    position: relative;
+}
+
+#home .image .box {
+    box-shadow: 1px 1px 40px rgba(80, 67, 67, 13%);
+    width: fit-content;
+    padding: 5px;
+    border-radius: 35px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
+
+#home .image .box1 {
+    position: absolute;
+    bottom: 8%;
+    left: -8%;
+    padding-left: 15px;
+}
+
+#home .image .box2 {
+    position: absolute;
+    bottom: 52%;
+    right: 3%;
+    padding-right: 15px;
+}
+
+#home .image .box p {
+    color: #F54748;
+    font-family: 'Merriweather', serif;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+#home .vector {
+    position: absolute;
+}
+
+#home img.vector1 {
+    width: 90px;
+    height: 90px;
+    left: 15%;
+}
+
+#home img.vector2 {
+    width: 85px;
+    height: 87px;
+    bottom: 19%;
+    left: -5%;
+}
+
+#home img.vector3 {
+    width: 108px;
+    height: 105px;
+    right: 5%;
+    top: 18%;
+}
+
+#home .image .box .fas {
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+}
+
+#home .image .box1 .fas {
+    margin-left: 10px;
+}
+
+#home .image .box2 .fas {
+    margin-right: 10px;
 }
 
 /* ingredients */
@@ -509,7 +585,6 @@ nav a:hover {
     margin-left: -100px;
 }
 
-
 .testimonial .card {
     padding: 30px;
     border-radius: 15px;
@@ -542,7 +617,6 @@ nav a:hover {
     font-weight: 500;
     color: rgba(80, 67, 67, .42);
 }
-
 
 .testimonial .people {
     display: flex;
